@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#293f35">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <title>BoonBuy spreadsheet: categorías, tallas y guía de compra</title>
+  <meta name="description" content="Explora BoonBuy spreadsheet con una guía en español sobre categorías, tallas, fotos QC y costes. Accede a las secciones de hipobuyfind.com.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="BoonBuy spreadsheet: descubre, compara y decide">
+  <meta property="og:description" content="Una guía independiente para organizar tus búsquedas de moda, revisar medidas y entender qué comprobar antes de comprar.">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="BoonBuy spreadsheet: guía de selección en español">
+  <meta name="twitter:description" content="Categorías de moda, consejos de tallas y respuestas claras sobre fotos QC y presupuesto.">
+  <!--
+    Archivo: index.html.
+    No se fija una URL canónica porque todavía no se conoce el dominio de publicación.
+
+    Investigación editorial:
+    Se intentó abrir la primera página de Bing para "BoonBuy spreadsheet",
+    pero el buscador no fue accesible mediante la herramienta de consulta.
+    Los siguientes resultados se recuperaron mediante búsqueda web alternativa.
+    No constituyen una clasificación verificada de los diez primeros resultados de Bing.
+
+    Referencias y temas identificados:
+    1. boonbuyspreadsheet.page/about/
+       Independencia editorial, enlaces de origen y límites de las imágenes.
+    2. sheetsboonbuy.com/browse
+       Organización por categorías y comparación de medidas.
+    3. spreadsheetboonbuy.com/
+       Diferencia entre un directorio y un servicio de compra.
+    4. boonbuyfinds.net/boonbuy-spreadsheet
+       Fichas, filtros y referencias QC cuando existen.
+    5. boonbuysheet.rent/boonbuy-spreadsheet
+       Una fila por referencia y comprobación del anuncio vigente.
+    6. boon-buy.net/spreadsheet/
+       Navegación por categorías y recorrido de investigación.
+    7. ssfinds.com/boonbuy-spreadsheet
+       Intención de búsqueda sobre enlaces, categorías y tutoriales.
+    8. boonbuy.org/
+       Guías y recursos informativos.
+    9. boonbuysheet.study/
+       Índice de descubrimiento de productos.
+    10. boonbuy-spreadsheets.com/
+        Precios de referencia y separación de gastos adicionales.
+
+    Cuatro temas secundarios:
+    BoonBuy finds; guía de BoonBuy; fotos QC de BoonBuy;
+    tallas en BoonBuy spreadsheet.
+
+    Veinticuatro intenciones de cola larga desarrolladas en el texto:
+    qué es BoonBuy spreadsheet; cómo usar BoonBuy spreadsheet;
+    BoonBuy spreadsheet en español; BoonBuy spreadsheet para principiantes;
+    categorías de BoonBuy spreadsheet; buscar zapatillas en BoonBuy spreadsheet;
+    comparar sudaderas de BoonBuy; elegir camisetas por medidas;
+    revisar chaquetas antes de comprar; comparar pantalones y shorts;
+    comprobar la talla de una gorra; elegir conjuntos por separado;
+    revisar la composición de ropa interior; comparar medidas de camisetas deportivas;
+    comprobar dimensiones de accesorios; cómo leer fotos QC de BoonBuy;
+    diferencia entre fotos de catálogo y QC; fotos QC y autenticidad;
+    guía de tallas en centímetros; medir una prenda en plano;
+    calcular el coste total de una compra; peso real y volumétrico;
+    qué hacer con un enlace de producto inactivo; organizar una lista de favoritos.
+  -->
+  <style>
+    :root{--paper:#f5f2e9;--white:#fffef9;--ink:#23342c;--muted:#5b685f;--green:#293f35;--lime:#e0ea91;--line:#d4d8c9;--orange:#b54c2e;--radius:18px}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    a{color:inherit;text-decoration-thickness:1px;text-underline-offset:4px}
+    a:focus-visible,summary:focus-visible{outline:3px solid var(--orange);outline-offset:5px}
+    img{display:block;max-width:100%;height:auto}
+    h1,h2,h3,p{margin-top:0}
+    h1,h2,h3{line-height:1.12;letter-spacing:-.035em}
+    h1{font-size:clamp(2.7rem,6.2vw,5.6rem);font-weight:650;margin-bottom:24px;max-width:900px}
+    h2{font-size:clamp(1.9rem,3.5vw,3rem);font-weight:620}
+    h3{font-size:1.28rem;font-weight:650}
+    p{margin-bottom:16px}
+    .wrap{width:min(1180px,calc(100% - 40px));margin:auto}
+    .masthead{border-bottom:1px solid var(--line)}
+    .header-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:88px}
+    .logo{font-weight:800;font-size:clamp(1.15rem,3.5vw,1.55rem);letter-spacing:-.045em;text-decoration:none;white-space:nowrap}
+    .header-note{font-size:.78rem;text-transform:uppercase;letter-spacing:.13em;color:var(--muted)}
+    .eyebrow{font-size:.75rem;font-weight:750;text-transform:uppercase;letter-spacing:.15em}
+    .intro{padding:48px 0 28px}
+    .intro-top{display:flex;justify-content:space-between;gap:20px;margin-bottom:20px}
+    .intro-top span:last-child{color:var(--muted)}
+    .intro-text{max-width:700px;font-size:1.13rem;color:var(--muted)}
+    .categories{padding-bottom:32px}
+    .category-head{display:flex;align-items:baseline;justify-content:space-between;gap:20px;margin-bottom:14px}
+    .category-head h2{font-size:1rem;letter-spacing:0;margin:0}
+    .category-head span{font-size:.8rem;color:var(--muted)}
+    .category-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+    .category{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px;padding:12px 15px;border:1px solid var(--line);border-radius:9px;text-decoration:none;background:var(--white);font-size:.85rem;font-weight:650;transition:background .15s,color .15s}
+    .category:hover{background:var(--green);color:white}
+    .category b{font-size:1.1rem;font-weight:400}
+    .feature{display:grid;grid-template-columns:1.15fr 1fr;border-radius:var(--radius);overflow:hidden;background:var(--green);color:var(--white)}
+    .feature-photo{background:#eeeae4;position:relative}
+    .feature-photo img{width:100%;height:100%;min-height:390px;object-fit:cover}
+    .image-label{position:absolute;left:18px;bottom:18px;background:var(--white);color:var(--ink);padding:7px 12px;border-radius:4px;font-size:.75rem}
+    .feature-copy{padding:42px;display:flex;flex-direction:column;justify-content:center}
+    .feature-copy h2{font-size:clamp(2rem,3vw,2.8rem)}
+    .feature-copy p{color:#d9e1d9}
+    .button{display:inline-flex;align-items:center;justify-content:space-between;gap:24px;padding:14px 20px;border-radius:7px;background:var(--lime);color:var(--ink);font-weight:750;text-decoration:none;align-self:flex-start}
+    .button:hover{background:#eef5b8}
+    .small{font-size:.8rem}
+    .feature-copy .small{margin:18px 0 0}
+    .section{padding:70px 0;border-bottom:1px solid var(--line)}
+    .section-head{display:grid;grid-template-columns:1fr 1fr;gap:45px;margin-bottom:30px}
+    .section-head h2{margin-bottom:0}
+    .section-head>p{color:var(--muted);align-self:end;margin-bottom:0}
+    .answer{padding:26px 30px;border-left:4px solid var(--orange);background:var(--white);margin-bottom:30px}
+    .answer h3{margin-bottom:12px}
+    .answer p{margin:0;max-width:950px}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    .step{border-top:1px solid var(--ink);padding-top:18px}
+    .number{display:block;font-size:.78rem;font-weight:750;color:var(--orange);margin-bottom:20px}
+    .step p{color:var(--muted);margin-bottom:0}
+    .editorial-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+    .visual-card{margin:0;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+    .visual-card img{width:100%;aspect-ratio:1.6;object-fit:cover}
+    .visual-card figcaption{padding:22px}
+    .visual-card figcaption p{color:var(--muted);font-size:.93rem}
+    .visual-card figcaption .small{margin-bottom:0}
+    .guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .guide{padding:25px;background:var(--white);border:1px solid var(--line);border-radius:12px}
+    .guide .eyebrow{color:var(--orange);display:block;margin-bottom:14px}
+    .guide p{color:var(--muted);font-size:.94rem;margin:0}
+    .table-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--white)}
+    table{width:100%;border-collapse:collapse;text-align:left;font-size:.94rem}
+    caption{text-align:left;padding:20px;font-weight:750}
+    th,td{padding:16px 20px;border-top:1px solid var(--line);vertical-align:top}
+    th{background:#e7eade;font-weight:700}
+    td:first-child{font-weight:650}
+    .articles{display:grid;grid-template-columns:1fr 1fr;gap:36px}
+    .article{padding-top:22px;border-top:3px solid var(--green)}
+    .article h3{font-size:1.6rem;margin:16px 0}
+    .article p{color:var(--muted)}
+    .article ul{padding-left:21px;color:var(--muted)}
+    .article li{margin:8px 0}
+    .faq-layout{display:grid;grid-template-columns:.7fr 1.3fr;gap:60px}
+    .faq-intro p{color:var(--muted)}
+    details{border-top:1px solid var(--line);padding:20px 0}
+    details:last-child{border-bottom:1px solid var(--line)}
+    summary{cursor:pointer;font-weight:700;line-height:1.45;padding-right:15px}
+    details p{margin:14px 0 0;color:var(--muted)}
+    .closing{margin:45px 0;padding:32px;background:var(--lime);border-radius:var(--radius);display:flex;align-items:center;justify-content:space-between;gap:30px}
+    .closing h2{font-size:1.8rem;margin-bottom:8px}
+    .closing p{margin:0}
+    .closing .button{background:var(--green);color:white;flex-shrink:0;align-self:center}
+    footer{padding:28px 0 36px;border-top:1px solid var(--line)}
+    .footer-top{display:flex;justify-content:space-between;gap:25px;align-items:center;margin-bottom:20px}
+    footer p{font-size:.8rem;color:var(--muted);max-width:950px;margin-bottom:10px}
+    @media(min-width:850px){.guide-grid,.articles{content-visibility:auto;contain-intrinsic-size:auto 420px}}
+    @media(max-width:900px){
+      .category-grid{grid-template-columns:repeat(3,1fr)}
+      .feature-copy{padding:28px}
+      .guide-grid{grid-template-columns:repeat(2,1fr)}
+      .faq-layout{grid-template-columns:1fr;gap:15px}
+    }
+    @media(max-width:620px){
+      .wrap{width:calc(100% - 28px)}
+      .header-inner{min-height:70px}
+      .header-note{display:none}
+      .intro{padding-top:30px}
+      .intro-top{font-size:.65rem}
+      .intro-text{font-size:1rem}
+      .category-grid{grid-template-columns:repeat(2,1fr)}
+      .category-head{align-items:flex-start}
+      .category-head span{max-width:130px;text-align:right}
+      .category{min-height:60px;padding:10px;font-size:.78rem}
+      .feature,.section-head,.steps,.editorial-grid,.guide-grid,.articles{grid-template-columns:1fr}
+      .feature-photo img{min-height:0;aspect-ratio:1.2}
+      .feature-copy{padding:28px 24px}
+      .section{padding:44px 0}
+      .section-head{gap:18px}
+      .steps{gap:28px}
+      .number{margin-bottom:12px}
+      .answer{padding:22px}
+      th,td{padding:12px;min-width:130px}
+      .closing,.footer-top{flex-direction:column;align-items:flex-start}
+      .closing{padding:25px}
+      .closing .button{align-self:flex-start}
+    }
+    @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebPage",
+        "@id":"#pagina",
+        "name":"BoonBuy spreadsheet: categorías, tallas y guía de compra",
+        "description":"Guía independiente en español para organizar búsquedas de moda, comparar medidas, revisar fotos QC y preparar un presupuesto.",
+        "inLanguage":"es",
+        "about":{"@type":"Thing","name":"BoonBuy spreadsheet"},
+        "hasPart":[{"@id":"#articulo-tallas"},{"@id":"#articulo-presupuesto"},{"@id":"#preguntas"}]
+      },
+      {
+        "@type":"Article",
+        "@id":"#articulo-tallas",
+        "headline":"La etiqueta no basta: elige por centímetros",
+        "inLanguage":"es",
+        "articleBody":"Para comparar tallas, mide en plano una prenda que ya te quede bien. Anota pecho, hombros, largo y manga. En pantalones, añade cintura, tiro y entrepierna. Comprueba cómo toma las medidas el vendedor y pregunta si falta una dimensión importante."
+      },
+      {
+        "@type":"Article",
+        "@id":"#articulo-presupuesto",
+        "headline":"Del precio de la ficha al presupuesto completo",
+        "inLanguage":"es",
+        "articleBody":"El coste total puede incluir el artículo, el transporte nacional, los servicios aplicables, el envío internacional, la conversión de divisa y los impuestos. El peso real y el volumétrico pueden influir en la tarifa. Solicita un cálculo para el destino y el paquete concretos antes de pagar."
+      },
+      {
+        "@type":"FAQPage",
+        "@id":"#preguntas",
+        "inLanguage":"es",
+        "mainEntity":[
+          {
+            "@type":"Question",
+            "name":"¿Qué es BoonBuy spreadsheet?",
+            "acceptedAnswer":{"@type":"Answer","text":"Es una expresión utilizada para buscar listas de referencias y enlaces de productos relacionados con BoonBuy. Esta página es una guía editorial en español, no una hoja descargable ni el servicio oficial."}
+          },
+          {
+            "@type":"Question",
+            "name":"¿Adónde llevan los enlaces de esta página?",
+            "acceptedAnswer":{"@type":"Answer","text":"Los diez accesos de categorías llevan a sus secciones indicadas en hipobuyfind.com. Los demás enlaces de navegación llevan a https://www.hipobuyfind.com. No se ofrece aquí un acceso directo al pago de BoonBuy."}
+          },
+          {
+            "@type":"Question",
+            "name":"¿Cómo puedo comparar las tallas?",
+            "acceptedAnswer":{"@type":"Answer","text":"Mide en plano una prenda que ya te quede bien y compara sus centímetros con la tabla del anuncio. Comprueba el método de medición y cualquier tolerancia indicada; una misma letra de talla puede variar entre vendedores."}
+          },
+          {
+            "@type":"Question",
+            "name":"¿Las fotos QC prueban que un artículo es auténtico?",
+            "acceptedAnswer":{"@type":"Answer","text":"No. Las fotos de control de calidad pueden ayudar a revisar el aspecto, las medidas o los defectos visibles, pero no sustituyen una autenticación profesional ni acreditan el origen del producto."}
+          },
+          {
+            "@type":"Question",
+            "name":"¿El precio del producto incluye el envío internacional?",
+            "acceptedAnswer":{"@type":"Answer","text":"No debe darse por hecho. Revisa qué incluye el importe del anuncio y calcula por separado los gastos aplicables de transporte, servicios, cambio de divisa e impuestos."}
+          },
+          {
+            "@type":"Question",
+            "name":"¿Qué hago si un enlace ya no funciona?",
+            "acceptedAnswer":{"@type":"Answer","text":"Vuelve a la categoría, busca la referencia o el nombre del modelo y comprueba el anuncio actual. No asumas que una publicación parecida ofrece la misma variante, composición o condiciones."}
+          },
+          {
+            "@type":"Question",
+            "name":"¿Las imágenes representan productos disponibles en el catálogo?",
+            "acceptedAnswer":{"@type":"Answer","text":"No necesariamente. Son referencias visuales de estilo. No acreditan existencias, autenticidad, precio ni relación comercial con las marcas; comprueba cada ficha en el sitio de destino."}
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/kvrnz/">
+</head>
+<body>
+  <header class="masthead">
+    <div class="wrap header-inner">
+      <a class="logo" href="https://www.hipobuyfind.com" aria-label="Visitar hipobuyfind.com">hipobuyfind.com</a>
+      <span class="header-note">Cuaderno de selección · edición en español</span>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <section class="intro" aria-labelledby="titulo">
+        <div class="intro-top eyebrow">
+          <span>Moda con criterio</span>
+          <span>Guía independiente / ES</span>
+        </div>
+        <h1 id="titulo">BoonBuy spreadsheet.<br>Menos dudas, mejor selección.</h1>
+        <p class="intro-text">Empieza por una categoría, compara lo que importa y guarda solo las referencias que encajen contigo. Una guía en español para pasar de una imagen atractiva a una decisión informada.</p>
+      </section>
+
+      <nav class="categories" aria-label="Categorías de productos">
+        <div class="category-head">
+          <h2>Elige tu punto de partida</h2>
+          <span>Accesos a hipobuyfind.com</span>
+        </div>
+        <div class="category-grid">
+          <a class="category" href="https://hipobuyfind.com/category-911-Shoes.html"><span>Shoes · Calzado</span><b aria-hidden="true">↗</b></a>
+          <a class="category" href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html"><span>Hoodies/Sweaters · Sudaderas</span><b aria-hidden="true">↗</b></a>
+          <a class="category" href="https://hipobuyfind.com/category-913-T-Shirts.html"><span>T-Shirts · Camisetas</span><b aria-hidden="true">↗</b></a>
+          <a class="category" href="https://hipobuyfind.com/category-914-Jackets.html"><span>Jackets · Chaquetas</span><b aria-hidden="true">↗</b></a>
+          <a class="category" href="https://hipobuyfind.com/category-915-Pants%2FShorts.html"><span>Pants/Shorts · Pantalones</span><b aria-hidden="true">↗</b></a>
+          <a class="category" href="https://hipobuyfind.com/category-916-Headwear.html"><span>Headwear · Gorras y gorros</span><b aria-hidden="true">↗</b></a>
+          <a class="category" href="https://hipobuyfind.com/category-917-Sets.html"><span>Sets · Conjuntos</span><b aria-hidden="true">↗</b></a>
+          <a class="category" href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html"><span>Underwear/underpants · Ropa interior</span><b aria-hidden="true">↗</b></a>
+          <a class="category" href="https://hipobuyfind.com/category-919-Jersey.html"><span>Jersey · Camisetas deportivas</span><b aria-hidden="true">↗</b></a>
+          <a class="category" href="https://hipobuyfind.com/category-920-Accessories.html"><span>Accessories · Accesorios</span><b aria-hidden="true">↗</b></a>
+        </div>
+      </nav>
+
+      <section class="feature" aria-labelledby="feature-title">
+        <div class="feature-photo">
+          <img src="https://feature.com/cdn/shop/files/Nike-Air-Force-1-_07---White-CW2288-111---02-03-24---Feature--KN.jpg?v=1707085578&amp;width=960"
+               alt="Zapatilla Nike Air Force 1 blanca con paneles de piel, perforaciones y logotipo lateral"
+               width="960" height="960" loading="eager" fetchpriority="high" decoding="async">
+          <span class="image-label">Referencia visual · Nike Air Force 1</span>
+        </div>
+        <div class="feature-copy">
+          <span class="eyebrow">01 / El detalle decide</span>
+          <h2>Una buena búsqueda empieza antes del carrito.</h2>
+          <p>Al buscar zapatillas en BoonBuy spreadsheet, compara la referencia del modelo, el color seleccionado y la guía de medidas. Una fotografía de catálogo ayuda a reconocer el diseño; no confirma el estado de la unidad que recibirás.</p>
+          <a class="button" href="https://www.hipobuyfind.com">Explorar el catálogo <span aria-hidden="true">↗</span></a>
+          <p class="small">Las imágenes son referencias de estilo, no anuncios de disponibilidad.</p>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="concepto">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">02 / Una respuesta clara</p>
+            <h2 id="concepto">Descubrir no es verificar.</h2>
+          </div>
+          <p>Para principiantes, separar la búsqueda, la revisión de la ficha y la compra ayuda a evitar confusiones.</p>
+        </div>
+        <div class="answer">
+          <h3>¿Qué es BoonBuy spreadsheet?</h3>
+          <p>Es una expresión utilizada para buscar listas de referencias y enlaces de productos relacionados con BoonBuy. <strong>Esta página ofrece orientación editorial y accesos al catálogo de hipobuyfind.com</strong>; no contiene una hoja descargable, no tramita pedidos y no representa al servicio oficial.</p>
+        </div>
+        <div class="steps">
+          <article class="step">
+            <span class="number">PASO 01</span>
+            <h3>Acota la búsqueda</h3>
+            <p>Explora BoonBuy finds por tipo de prenda y uso previsto. Anota el nombre, la variante y el enlace para no confundir referencias visualmente parecidas.</p>
+          </article>
+          <article class="step">
+            <span class="number">PASO 02</span>
+            <h3>Comprueba la ficha</h3>
+            <p>Revisa composición, medidas y condiciones del vendedor. Si consultas fotos QC de BoonBuy, comprueba a qué variante corresponden y qué detalles permiten observar.</p>
+          </article>
+          <article class="step">
+            <span class="number">PASO 03</span>
+            <h3>Decide con el total</h3>
+            <p>Antes de pagar, confirma el importe final, los gastos aplicables y las condiciones de devolución. Una guía de BoonBuy orienta; las condiciones vigentes se consultan en el servicio utilizado.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="inspiracion">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">03 / Archivo visual</p>
+            <h2 id="inspiracion">Texturas, proporciones y pequeños detalles.</h2>
+          </div>
+          <p>Observa cómo conviven los tonos neutros, los herrajes y los estampados. Utiliza estas imágenes para definir preferencias, sin deducir la calidad de un anuncio distinto.</p>
+        </div>
+        <div class="editorial-grid">
+          <figure class="visual-card">
+            <img src="https://luxlexicon.com/cdn/shop/files/llweb_aboutpagebanner_750x480px_5a3a9c48-a24b-480f-8077-021c570eb4d9.jpg?v=1725537886&amp;width=800"
+                 alt="Bolsos de Dior, Hermès y Louis Vuitton colocados sobre un fondo rosa claro"
+                 width="750" height="480" loading="lazy" decoding="async">
+            <figcaption>
+              <h3>Accesorios con proporción</h3>
+              <p>En un bolso, compara ancho, alto, fondo y longitud de la correa. Una silueta reconocible no revela por sí sola la capacidad ni el acabado interior.</p>
+              <p class="small">Referencia visual: Dior, Hermès y Louis Vuitton.</p>
+            </figcaption>
+          </figure>
+          <figure class="visual-card">
+            <img src="https://cdn.shopify.com/s/files/1/0586/5314/7211/files/Top_10_Luxury_Belt_Brands_in_the_World_You_Should_Know_6.jpg?v=1749179264&amp;width=800"
+                 alt="Selección de cinturones con hebillas de Gucci, Louis Vuitton, Dior y otras marcas"
+                 width="800" height="500" loading="lazy" decoding="async">
+            <figcaption>
+              <h3>El acabado también cuenta</h3>
+              <p>Revisa el ancho del cinturón, el contorno útil, los bordes y el cierre. En joyería, pregunta por el metal base, el recubrimiento y las medidas.</p>
+              <p class="small">Referencia visual: hebillas y materiales de accesorios.</p>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="seleccion">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">04 / Notas de selección</p>
+            <h2 id="seleccion">Qué mirar en cada categoría.</h2>
+          </div>
+          <p>Las categorías de BoonBuy spreadsheet son un punto de partida. El ajuste, el material y el uso real hacen que una referencia tenga sentido para ti.</p>
+        </div>
+        <div class="guide-grid">
+          <article class="guide">
+            <span class="eyebrow">Sudaderas y camisetas</span>
+            <h3>Define la silueta</h3>
+            <p>Para comparar sudaderas, mira pecho, hombros y largo. Al elegir camisetas por medidas, distingue un corte recto de uno amplio; el gramaje, si aparece, no resume toda la calidad del tejido.</p>
+          </article>
+          <article class="guide">
+            <span class="eyebrow">Chaquetas</span>
+            <h3>Deja espacio para las capas</h3>
+            <p>Antes de elegir una chaqueta, comprueba el contorno con la ropa que llevarás debajo. Revisa forro, puños, cremallera y la información concreta sobre abrigo o resistencia al agua.</p>
+          </article>
+          <article class="guide">
+            <span class="eyebrow">Pantalones y shorts</span>
+            <h3>No olvides el tiro</h3>
+            <p>Compara cintura, tiro, entrepierna y abertura de la pierna. Comprueba si la cintura se mide relajada o estirada y si el tejido tiene elasticidad.</p>
+          </article>
+          <article class="guide">
+            <span class="eyebrow">Gorras y accesorios</span>
+            <h3>Comprueba las dimensiones</h3>
+            <p>En una gorra, revisa el contorno y el tipo de ajuste. Para anillos, collares y pulseras, confirma diámetro o longitud, sistema de cierre y composición declarada.</p>
+          </article>
+          <article class="guide">
+            <span class="eyebrow">Conjuntos y ropa interior</span>
+            <h3>Lee cada pieza por separado</h3>
+            <p>Un conjunto puede ajustar de forma distinta arriba y abajo. En ropa interior, comprueba composición, elasticidad, medidas y condiciones de devolución antes de decidir.</p>
+          </article>
+          <article class="guide">
+            <span class="eyebrow">Camisetas deportivas</span>
+            <h3>Compara el corte exacto</h3>
+            <p>Revisa ancho y largo, además de las opciones de personalización. Los nombres de las versiones no sustituyen una tabla de medidas ni una descripción del tejido.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="qc">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">05 / Lectura de imágenes</p>
+            <h2 id="qc">Fotos de catálogo y QC: dos funciones distintas.</h2>
+          </div>
+          <p>Una imagen presenta un diseño. Otra puede documentar una unidad concreta. Comprueba el contexto antes de compararlas.</p>
+        </div>
+        <div class="table-scroll" tabindex="0" role="region" aria-label="Tabla de comprobaciones visuales">
+          <table>
+            <caption>Qué puedes revisar y qué queda por confirmar</caption>
+            <thead>
+              <tr><th scope="col">Referencia</th><th scope="col">Qué observar</th><th scope="col">Límite de la comprobación</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Foto de catálogo</td><td>Diseño, combinación de colores y proporciones generales.</td><td>Puede utilizar iluminación, edición o una muestra distinta.</td></tr>
+              <tr><td>Foto QC de una unidad</td><td>Costuras visibles, manchas, simetría y correspondencia con la variante.</td><td>No muestra necesariamente todas las superficies ni defectos internos.</td></tr>
+              <tr><td>Foto con cinta métrica</td><td>La dimensión mostrada y la posición de los puntos de medición.</td><td>No sustituye las medidas que faltan ni explica siempre la tolerancia.</td></tr>
+              <tr><td>Etiqueta o logotipo</td><td>Texto legible, colocación y acabado visible.</td><td>Una fotografía no acredita autenticidad ni procedencia.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="lecturas">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">06 / Dos lecturas prácticas</p>
+            <h2 id="lecturas">Ajuste y presupuesto, antes de comprar.</h2>
+          </div>
+          <p>Estas dos comprobaciones ayudan a convertir una lista de favoritos en una selección que puedas evaluar con calma.</p>
+        </div>
+        <div class="articles">
+          <article class="article" id="articulo-tallas">
+            <span class="eyebrow">Artículo / Tallas</span>
+            <h3>La etiqueta no basta: elige por centímetros</h3>
+            <p>Para comparar tallas en BoonBuy spreadsheet, empieza con una prenda que ya te quede bien. Colócala en plano, sin estirarla, y anota las medidas principales. Esta referencia resulta más útil que asumir que siempre utilizas la misma letra.</p>
+            <ul>
+              <li>En camisetas y sudaderas: pecho, hombros, largo y manga.</li>
+              <li>En pantalones: cintura, tiro, entrepierna y abertura.</li>
+              <li>En calzado: sigue el método de la guía específica; longitud del pie y longitud de plantilla no son equivalentes.</li>
+            </ul>
+            <p>Comprueba cómo mide el vendedor. El ancho de pecho en plano no es el contorno completo. Si falta una dimensión decisiva, pregunta antes de elegir la variante.</p>
+          </article>
+          <article class="article" id="articulo-presupuesto">
+            <span class="eyebrow">Artículo / Costes</span>
+            <h3>Del precio de la ficha al presupuesto completo</h3>
+            <p>El importe visible de una referencia puede ser solo una parte del gasto. Para calcular el coste total de una compra, separa cada concepto y comprueba cuáles se aplican a tu caso.</p>
+            <ul>
+              <li>Artículo y posible transporte nacional hasta el intermediario.</li>
+              <li>Servicios aplicables, conversión de divisa y envío internacional.</li>
+              <li>Impuestos y posibles gastos de gestión en el destino.</li>
+            </ul>
+            <p>El peso real y el volumétrico pueden influir en la tarifa de transporte. Solicita un cálculo para el paquete y el destino concretos. Agrupar artículos no garantiza siempre un total menor: compara las opciones disponibles.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="faq-title">
+        <div class="faq-layout">
+          <div class="faq-intro">
+            <p class="eyebrow">07 / Preguntas frecuentes</p>
+            <h2 id="faq-title">Respuestas antes del siguiente clic.</h2>
+            <p>Una referencia guardada debería incluir enlace, variante y medidas. Si cambia el anuncio, vuelve a comprobar esos datos.</p>
+          </div>
+          <div>
+            <details open>
+              <summary>¿Qué es BoonBuy spreadsheet?</summary>
+              <p>Es una expresión utilizada para buscar listas de referencias y enlaces de productos relacionados con BoonBuy. Esta página es una guía editorial en español, no una hoja descargable ni el servicio oficial.</p>
+            </details>
+            <details>
+              <summary>¿Adónde llevan los enlaces de esta página?</summary>
+              <p>Los diez accesos de categorías llevan a sus secciones indicadas en hipobuyfind.com. Los demás enlaces de navegación llevan a https://www.hipobuyfind.com. No se ofrece aquí un acceso directo al pago de BoonBuy.</p>
+            </details>
+            <details>
+              <summary>¿Cómo puedo comparar las tallas?</summary>
+              <p>Mide en plano una prenda que ya te quede bien y compara sus centímetros con la tabla del anuncio. Comprueba el método de medición y cualquier tolerancia indicada; una misma letra de talla puede variar entre vendedores.</p>
+            </details>
+            <details>
+              <summary>¿Las fotos QC prueban que un artículo es auténtico?</summary>
+              <p>No. Las fotos de control de calidad pueden ayudar a revisar el aspecto, las medidas o los defectos visibles, pero no sustituyen una autenticación profesional ni acreditan el origen del producto.</p>
+            </details>
+            <details>
+              <summary>¿El precio del producto incluye el envío internacional?</summary>
+              <p>No debe darse por hecho. Revisa qué incluye el importe del anuncio y calcula por separado los gastos aplicables de transporte, servicios, cambio de divisa e impuestos.</p>
+            </details>
+            <details>
+              <summary>¿Qué hago si un enlace ya no funciona?</summary>
+              <p>Vuelve a la categoría, busca la referencia o el nombre del modelo y comprueba el anuncio actual. No asumas que una publicación parecida ofrece la misma variante, composición o condiciones.</p>
+            </details>
+            <details>
+              <summary>¿Las imágenes representan productos disponibles en el catálogo?</summary>
+              <p>No necesariamente. Son referencias visuales de estilo. No acreditan existencias, autenticidad, precio ni relación comercial con las marcas; comprueba cada ficha en el sitio de destino.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <aside class="closing" aria-label="Continuar al catálogo">
+        <div>
+          <h2>Tu próxima selección, con más contexto.</h2>
+          <p>Explora una categoría y conserva los detalles que necesitas para comparar.</p>
+        </div>
+        <a class="button" href="https://www.hipobuyfind.com">Visitar hipobuyfind.com <span aria-hidden="true">↗</span></a>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-top">
+        <a class="logo" href="https://www.hipobuyfind.com">hipobuyfind.com</a>
+        <span class="small">Guía editorial independiente · Español</span>
+      </div>
+      <p>Esta página no es el sitio oficial de BoonBuy ni afirma una asociación con BoonBuy, Nike, Louis Vuitton, Gucci, Hermès o Dior. Los nombres de marcas se utilizan para identificar referencias visuales.</p>
+      <p>Las imágenes externas tienen una función ilustrativa. Los productos, las condiciones y la disponibilidad deben comprobarse en las fichas de destino. Esta página no publica precios, descuentos ni valoraciones de compradores.</p>
+    </div>
+  </footer>
+</body>
+</html>
